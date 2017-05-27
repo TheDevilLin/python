@@ -26,21 +26,21 @@ house = [
 ]
 
 #softDrink = input('Please input here the soft drink brand: ')
-isAvailable = 0
+isAvailable = False
 
 for x in store:
     if softDrink == x:
         print(f'Got it!')
-        isAvailable = 1
+        isAvailable = True
          
 
 for y in house:
     if softDrink == y:
         print(f'Please wait for a while!')
-        isAvailable = 1
+        isAvailable = True
          
 
-if isAvailable == 0:
+if isAvailable == False:
     print(f'Sorry we do not sell that. We only have ')
     for x in store:
         print(f'{x} ')
